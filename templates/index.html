@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AI Resume Builder</title>
+
+<!-- External CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container mt-5">
+
+<h2 class="text-center mb-4">AI Resume Builder</h2>
+
+<!-- FORM -->
+<form method="POST" class="card p-4 shadow">
+
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input type="text" name="name" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" name="email" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone</label>
+<input type="text" name="phone" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="form-label">Skills</label>
+<textarea name="skills" class="form-control" rows="3"></textarea>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Education</label>
+<textarea name="education" class="form-control" rows="3"></textarea>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Projects</label>
+<textarea name="projects" class="form-control" rows="3"></textarea>
+</div>
+
+<button type="submit" class="btn btn-primary w-100">
+Generate Resume
+</button>
+
+</form>
+
+<!-- RESUME DISPLAY -->
+{% if resume %}
+
+<div class="resume-container">
+
+<div class="resume-header">
+
+<div>
+<div class="resume-name">
+{{ request.form.name }}
+</div>
+
+<div class="resume-contact">
+{{ request.form.email }}<br>
+{{ request.form.phone }}
+</div>
+</div>
+
+<a href="/download" class="download-btn">
+Download PDF
+</a>
+
+</div>
+
+<div class="resume-body" style="width:100%;">
+
+<pre class="resume-text">{{ resume }}</pre>
+
+</div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

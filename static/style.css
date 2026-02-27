@@ -1,0 +1,156 @@
+/* ========================= */
+/* Professional Resume Layout */
+/* Jack William Style */
+/* ========================= */
+
+.resume-container {
+    margin-top: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #d1d5db;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+/* Name */
+.resume-name {
+    font-size: 42px;
+    font-weight: 800;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+/* Subtitle */
+.resume-subtitle {
+    font-size: 16px;
+    color: #6b7280;
+    letter-spacing: 1px;
+}
+
+/* Contact info */
+.resume-contact {
+    text-align: right;
+    font-size: 14px;
+    color: #444;
+}
+
+.resume-contact p {
+    margin: 3px 0;
+}
+
+/* Download button */
+.download-btn {
+    background: #16a34a;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.download-btn:hover {
+    background: #15803d;
+}
+
+/* Body layout */
+.resume-body {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* Left column */
+.resume-left {
+    width: 35%;
+    border-right: 2px solid #d1d5db;
+    padding-right: 25px;
+}
+
+/* Right column */
+.resume-right {
+    width: 65%;
+    padding-left: 25px;
+}
+
+/* Section titles */
+.resume-section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+/* Section text */
+.resume-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* List style */
+.resume-list {
+    padding-left: 18px;
+}
+
+.resume-list li {
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+    .resume-body {
+        flex-direction: column;
+    }
+
+    .resume-left {
+        width: 100%;
+        border-right: none;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .resume-right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .resume-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resume-contact {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .resume-text {
+    white-space: pre-wrap;
+    font-family: Arial;
+    line-height: 1.6;
+}
+.resume-text {
+    white-space: pre-wrap;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+}
