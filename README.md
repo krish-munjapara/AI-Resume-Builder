@@ -25,6 +25,16 @@ This project provides an AI-driven solution that automatically generates persona
 - ✅ Portfolio-Ready Resume Format
 
 ---
+## 📸 Project Screenshots
+
+### 🔹 Home Page
+![Home Page](screenshots/homepage.png)
+
+### 🔹 Generated Resume
+![Resume](screenshots/generated_resume.png)
+
+### 🔹 PDF Output
+![PDF](screenshots/pdf_output.png)
 
 ## 🧠 How AI is Used
 
